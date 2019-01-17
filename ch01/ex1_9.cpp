@@ -1,16 +1,13 @@
 // sum the numbers from 50 to 100 (use while)
 
 #include <iostream>
+using namespace std;
 
-auto sum(int lo, int hi)
-{
-    int sum = 0;
-    while (lo <= hi) sum += lo++;
-    return sum;
-}
 
 int main()
 {
-    std::cout << "Sum of 50 to 100 inclusive is: " << sum(50, 100) << std::endl;
+    int i=50,sum=0; 
+    while(i<=100){sum+=i;i++;}
+    std::cout << "Sum of 50 to 100 inclusive is: " << sum << std::endl;
     return 0;
 }
